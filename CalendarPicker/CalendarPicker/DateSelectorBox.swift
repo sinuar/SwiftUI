@@ -1,0 +1,68 @@
+//
+//  CalPickerView.swift
+//  CalendarPicker
+//
+//  Created by Sinuhé Ruedas on 22/05/23.
+//
+
+import SwiftUI
+
+struct DateSelectorBox: View {
+    // MARK: - Properties
+    let textOne: String
+    let textTwo: String
+    
+    // MARK: - Private properties
+    @ViewBuilder
+    private var leadingImage: some View {
+        Image(systemName: "globe")
+            .resizable()
+            .frame(width: 24, height: 24)
+            .padding(.leading)
+    }
+    @ViewBuilder
+    private var title: some View {
+        Text(textOne)
+            .font(.subheadline)
+            .fontWeight(.bold)
+            .foregroundColor(Constant.textColor)
+            .multilineTextAlignment(.leading)
+            .padding(.top, 6)
+    }
+    
+    @ViewBuilder
+    private var date: some View {
+        Text(textTwo)
+            .font(.title3)
+            .multilineTextAlignment(.leading)
+            .padding(.bottom, 6)
+    }
+    
+    var body: some View {
+        HStack(spacing: 16) {
+            leadingImage
+            VStack(alignment: .leading, spacing: 3) {
+                title
+                date
+            }
+            Spacer()
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: 14)
+                .stroke(Constant.accentColor, lineWidth: 2)
+        )
+        .padding(.top, 8)
+    }
+    
+    // MARK: - Helpers
+    private enum Constant {
+        static let accentColor = Color(red: 146/255, green: 146/255, blue: 146/255)
+        static let textColor = Color(red: 112/255, green: 112/255, blue: 11/255)
+    }
+}
+
+struct DateSelectorBoxView_Previews: PreviewProvider {
+    static var previews: some View {
+        DateSelectorBox(textOne: "TextOne", textTwo: "TextTwo")
+    }
+}
