@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-enum DateLayout {
-    case single, horizontal, vertical
-}
-
 struct DatePicker: View {
     var layout: DateLayout
     
