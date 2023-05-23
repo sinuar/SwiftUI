@@ -10,6 +10,7 @@ import SwiftUI
 struct DateSelectorBox: View {
     // MARK: - Properties
     let viewModel: DateViewModel
+    @State private var showCalendar: Bool = false
     
     // MARK: - Private properties
     @ViewBuilder
@@ -51,6 +52,18 @@ struct DateSelectorBox: View {
                 .stroke(Constant.accentColor, lineWidth: 2)
         )
         .padding(.top, 8)
+        .onTapGesture {
+            showCalendar = true
+        }
+        .sheet(isPresented: $showCalendar) {
+            Button {
+                print("Button tapped")
+            } label: {
+                Text("Day")
+            }
+
+        }
+        
     }
     
     // MARK: - Helpers
