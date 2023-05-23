@@ -9,20 +9,19 @@ import SwiftUI
 
 struct DateSelectorBox: View {
     // MARK: - Properties
-    let dateTitle: String
-    let dateText: String
+    let viewModel: DateViewModel
     
     // MARK: - Private properties
     @ViewBuilder
     private var leadingImage: some View {
-        Image(systemName: "globe")
+        Image(systemName: viewModel.iconName)
             .resizable()
             .frame(width: 24, height: 24)
             .padding(.leading)
     }
     @ViewBuilder
     private var title: some View {
-        Text(dateTitle)
+        Text(viewModel.title)
             .font(.subheadline)
             .fontWeight(.bold)
             .foregroundColor(Constant.textColor)
@@ -32,7 +31,7 @@ struct DateSelectorBox: View {
     
     @ViewBuilder
     private var date: some View {
-        Text(dateText)
+        Text(viewModel.date)
             .font(.title3)
             .multilineTextAlignment(.leading)
             .padding(.bottom, 6)
@@ -63,6 +62,6 @@ struct DateSelectorBox: View {
 
 struct DateSelectorBoxView_Previews: PreviewProvider {
     static var previews: some View {
-        DateSelectorBox(dateTitle: "TitleText", dateText: "DateText")
+        DateSelectorBox(viewModel: DateViewModel(iconName: "", title: "", date: ""))
     }
 }

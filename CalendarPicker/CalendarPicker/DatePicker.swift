@@ -12,7 +12,7 @@ struct DatePicker: View {
     
     var body: some View {
         VStack {
-            AnyView(build(.vertical))
+            AnyView(build(layout))
                 .padding()
             Button {
                 print("Boton")
@@ -24,19 +24,19 @@ struct DatePicker: View {
     
     private func build(_ layout: DateLayout) -> any View {
         switch layout {
-        case .single:
+        case let .single(model):
             return VStack {
-                DateSelectorBox(dateTitle: "date", dateText: "today")
+                DateSelectorBox(viewModel: model)
             }
-        case .horizontal:
+        case let .horizontal(startDate, endDate):
             return HStack {
-                DateSelectorBox(dateTitle: "date", dateText: "today")
-                DateSelectorBox(dateTitle: "date", dateText: "thorizontaly")
+                DateSelectorBox(viewModel: startDate)
+                DateSelectorBox(viewModel: endDate)
             }
-        default:
+        case let .vertical(startDate, endDate):
             return VStack {
-                DateSelectorBox(dateTitle: "no Single", dateText: "lol")
-                DateSelectorBox(dateTitle: "no Single", dateText: "vertical")
+                DateSelectorBox(viewModel: startDate)
+                DateSelectorBox(viewModel: endDate)
             }
         }
     }
@@ -44,6 +44,18 @@ struct DatePicker: View {
 
 struct DatePicker_Previews: PreviewProvider {
     static var previews: some View {
-        DatePicker(layout: .single)
+        DatePicker(
+            layout: .vertical(
+                startDate: DateViewModel(
+                    iconName: "",
+                    title: "",
+                    date: ""
+                ),
+                endDate: DateViewModel(
+                    iconName: "",
+                    title: "",
+                    date: "")
+            )
+        )
     }
 }
