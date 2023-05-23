@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F322F512A1C345600CBFAF5 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F322F502A1C345600CBFAF5 /* DatePicker.swift */; };
 		0F4A37412A1BE0E700C5EECA /* CalendarPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A37402A1BE0E700C5EECA /* CalendarPickerApp.swift */; };
 		0F4A37432A1BE0E700C5EECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A37422A1BE0E700C5EECA /* ContentView.swift */; };
 		0F4A37452A1BE0E900C5EECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A37442A1BE0E900C5EECA /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F322F502A1C345600CBFAF5 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		0F4A373D2A1BE0E700C5EECA /* CalendarPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4A37402A1BE0E700C5EECA /* CalendarPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerApp.swift; sourceTree = "<group>"; };
 		0F4A37422A1BE0E700C5EECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0F4A37512A1BE31C00C5EECA /* DateSelectorBox.swift */,
+				0F322F502A1C345600CBFAF5 /* DatePicker.swift */,
 				0F4A37402A1BE0E700C5EECA /* CalendarPickerApp.swift */,
 				0F4A37422A1BE0E700C5EECA /* ContentView.swift */,
 				0F4A37442A1BE0E900C5EECA /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				0F4A37432A1BE0E700C5EECA /* ContentView.swift in Sources */,
 				0F4A37412A1BE0E700C5EECA /* CalendarPickerApp.swift in Sources */,
 				0F4A37522A1BE31C00C5EECA /* DateSelectorBox.swift in Sources */,
+				0F322F512A1C345600CBFAF5 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

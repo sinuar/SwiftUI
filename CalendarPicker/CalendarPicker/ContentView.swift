@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            DateSelectorBox(textOne: "Un primer texto", textTwo: "Un segundo y mayor texto")
-            DateSelectorBox(textOne: "Date", textTwo: "Date numbers")
+            DatePicker(layout: .single)
+            DatePicker(layout: .vertical)
         }
         .padding()
     }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DateSelectorBox: View {
     // MARK: - Properties
-    let textOne: String
-    let textTwo: String
+    let dateTitle: String
+    let dateText: String
     
     // MARK: - Private properties
     @ViewBuilder
@@ -22,7 +22,7 @@ struct DateSelectorBox: View {
     }
     @ViewBuilder
     private var title: some View {
-        Text(textOne)
+        Text(dateTitle)
             .font(.subheadline)
             .fontWeight(.bold)
             .foregroundColor(Constant.textColor)
@@ -32,7 +32,7 @@ struct DateSelectorBox: View {
     
     @ViewBuilder
     private var date: some View {
-        Text(textTwo)
+        Text(dateText)
             .font(.title3)
             .multilineTextAlignment(.leading)
             .padding(.bottom, 6)
@@ -57,12 +57,12 @@ struct DateSelectorBox: View {
     // MARK: - Helpers
     private enum Constant {
         static let accentColor = Color(red: 146/255, green: 146/255, blue: 146/255)
-        static let textColor = Color(red: 112/255, green: 112/255, blue: 11/255)
+        static let textColor = Color(red: 128/255, green: 128/255, blue: 11/255)
     }
 }
 
 struct DateSelectorBoxView_Previews: PreviewProvider {
     static var previews: some View {
-        DateSelectorBox(textOne: "TextOne", textTwo: "TextTwo")
+        DateSelectorBox(dateTitle: "TitleText", dateText: "DateText")
     }
 }
