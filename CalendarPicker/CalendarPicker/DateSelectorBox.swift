@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct DateSelectorBox: View {
+struct DateSelectorBox<Model>: View where Model: DatePresenter {
     // MARK: - Properties
-    @ObservedObject var viewModel: DateViewModel
+    @ObservedObject var viewModel: Model
     
     // MARK: - Private properties
     @State private var showCalendar: Bool = false
@@ -26,7 +26,7 @@ struct DateSelectorBox: View {
         Text(viewModel.title)
             .font(.subheadline)
             .fontWeight(.bold)
-            .foregroundColor(Constant.textColor)
+            .foregroundColor(Constant().textColor)
             .multilineTextAlignment(.leading)
             .padding(.top, 6)
     }
@@ -50,7 +50,7 @@ struct DateSelectorBox: View {
         }
         .overlay(
             RoundedRectangle(cornerRadius: 14)
-                .stroke(Constant.accentColor, lineWidth: 2)
+                .stroke(Constant().accentColor, lineWidth: 2)
         )
         .padding(.top, 8)
         .onTapGesture {
@@ -68,9 +68,9 @@ struct DateSelectorBox: View {
     }
     
     // MARK: - Helpers
-    private enum Constant {
-        static let accentColor = Color(red: 146/255, green: 146/255, blue: 146/255)
-        static let textColor = Color(red: 128/255, green: 128/255, blue: 11/255)
+    private struct Constant {
+        let accentColor = Color(red: 146/255, green: 146/255, blue: 146/255)
+        let textColor = Color(red: 128/255, green: 128/255, blue: 11/255)
     }
 }
 
