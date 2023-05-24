@@ -9,10 +9,11 @@ import SwiftUI
 
 struct DateSelectorBox: View {
     // MARK: - Properties
-    let viewModel: DateViewModel
-    @State private var showCalendar: Bool = false
+    @ObservedObject var viewModel: DateViewModel
     
     // MARK: - Private properties
+    @State private var showCalendar: Bool = false
+    
     @ViewBuilder
     private var leadingImage: some View {
         Image(systemName: viewModel.iconName)
@@ -57,7 +58,7 @@ struct DateSelectorBox: View {
         }
         .sheet(isPresented: $showCalendar) {
             Button {
-                print("Button tapped")
+                viewModel.date = "New Value"
             } label: {
                 Text("Day")
             }

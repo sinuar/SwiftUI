@@ -6,11 +6,18 @@
 //
 
 import Foundation
+import Combine
 
-final class DateViewModel {
+protocol DatePresenter {
+    var iconName: String { get }
+    var title: String { get }
+    var date: String { get set }
+}
+
+final class DateViewModel: ObservableObject, DatePresenter {
     let iconName: String
     let title: String
-    let date: String
+    @Published var date: String
     
     init(iconName: String, title: String, date: String) {
         self.iconName = iconName
