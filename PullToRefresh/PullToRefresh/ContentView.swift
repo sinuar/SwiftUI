@@ -7,38 +7,34 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
-    var lazy: Bool = false
-    var someText = "ESte es un parrafo de muchas cosas"
-    
-    @State private var isLoading = false
-    var body: some View {
-        RefreshableScrollView(action: refreshList) {
-            if isLoading {
-                VStack {
-                    Color.red
-                }
-            }
-            if lazy {
-                LazyVStack {
-                    Text(someText)
-                }
-            } else {
-                VStack {
-                    Text("Mas texto")
-                    Text("Mas texto")
 
+    @State var pullToRefresh = PullToRefresh(progress: 0, state: .idle)
+    @State var events: [Event] = []
+
+    var body: some View {
+        ScrollView {
+            ScrollViewGeometryReader(pullToRefresh: $pullToRefresh) { // 1
+                await update()
+                print("Updated!")
+            }
+            ZStack(alignment: .top) {
+                if pullToRefresh.state == .ongoing { // 2
+                    ProgressView()
                 }
+                LazyVStack { // 3
+                    ForEach(events) {
+                        EventView(event: $0)
+                    }
+                }
+                .offset(y: pullToRefresh.state == .ongoing ? Constants.maxOffset : 0) // 4
             }
         }
     }
-        
-    private func refreshList() {
-        isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            isLoading = false
-        }
+
+    @MainActor
+    func update() async {
+        events = await fetchMoreEvents(toAppend: events)
     }
 }
 
