@@ -23,6 +23,7 @@ public struct MBPullToRefreshContainer<Content: View>: View {
     @State private var dragAmount = CGSize.zero
     @State private var pullDownOnVoiceOver = true 
     @State private var offsets = [CGFloat]()
+    @State private var label1Focused = false
 
     public init(viewModel: ViewModel, @ViewBuilder content: @escaping () -> Content) {
         self.viewModel = viewModel
@@ -39,10 +40,21 @@ public struct MBPullToRefreshContainer<Content: View>: View {
                 }
             }
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                if
+                    (UIAccessibility.isVoiceOverRunning) {
+                    let message: NSAttributedString = NSAttributedString(
+                        string: viewModel.accessibility.label ?? "",
+                        attributes: [.accessibilitySpeechQueueAnnouncement: true])
+                    UIAccessibility.post(notification: .announcement, argument: message)
+                }
+            }
+        }
         .accessibilityAddTraits(.isSelected)
         .accessibilityIdentifier(viewModel.accessibility.identifier)
-        .accessibilityLabel(viewModel.accessibility.label ?? "Debe leer esto")
-        .accessibilityHint(viewModel.accessibility.hint ?? "Debe leer esto22")
+        .accessibilityLabel(viewModel.accessibility.label ?? "This is the first label")
+        .accessibilityHint(viewModel.accessibility.hint ?? "This is the hint to be read")
     }
 
     @ViewBuilder private var loadMoreContainer: some View {
@@ -160,3 +172,4 @@ public struct MBPullToRefreshContainer<Content: View>: View {
         }
     }
 }
+

@@ -14,40 +14,55 @@
             filePath = "LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "wrappedViewOverlaid(geometry:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "85BD1472-691E-4F91-9840-0BE53F156C91 - 300051c383a5c494"
+                  uuid = "85BD1472-691E-4F91-9840-0BE53F156C91 - 7e6685363d30629"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (SwiftUI.Edge) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0&gt;)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  symbolName = "closure #5 (CoreGraphics.CGFloat) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0&gt;)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
                   moduleName = "LoadingRefresh"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "252">
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "1764">
                </Location>
                <Location
-                  uuid = "85BD1472-691E-4F91-9840-0BE53F156C91 - f0e4829b70c2c83c"
+                  uuid = "85BD1472-691E-4F91-9840-0BE53F156C91 - f43d2aff7b8b75a5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaidForVoiceOver(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
                   moduleName = "LoadingRefresh"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "2016">
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+               <Location
+                  uuid = "85BD1472-691E-4F91-9840-0BE53F156C91 - 4047feaa609244a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.anchorPreference&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_1: SwiftUI.PreferenceKey&gt;(key: &#x3c4;_1_1.Type, value: SwiftUI.Anchor&lt;&#x3c4;_1_0&gt;.Source, transform: (SwiftUI.Anchor&lt;&#x3c4;_1_0&gt;) -&gt; &#x3c4;_1_1.Value) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  moduleName = "LoadingRefresh"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "480">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -62,40 +77,70 @@
             filePath = "LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "wrappedViewOverlaid(geometry:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - 7e6685363d305c6"
+                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - cea90e4677a285e1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #5 (CoreGraphics.CGFloat) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0&gt;)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  symbolName = "LoadingRefresh.MBPullToRefreshContainer.setupOffsetPreferenceChange(CoreGraphics.CGFloat) -&gt; ()"
                   moduleName = "LoadingRefresh"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "708">
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "384">
                </Location>
                <Location
-                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - 4047feaa6092476e"
+                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - a1ae5485f4c4ba6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.anchorPreference&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_1: SwiftUI.PreferenceKey&gt;(key: &#x3c4;_1_1.Type, value: SwiftUI.Anchor&lt;&#x3c4;_1_0&gt;.Source, transform: (SwiftUI.Anchor&lt;&#x3c4;_1_0&gt;) -&gt; &#x3c4;_1_1.Value) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0&gt;)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
                   moduleName = "LoadingRefresh"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "1036">
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "3892">
+               </Location>
+               <Location
+                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - f43d2aff7b8b74be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  moduleName = "LoadingRefresh"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "1164">
+               </Location>
+               <Location
+                  uuid = "0455AFF8-8B8C-46A7-8D57-0ED3BB83D3A8 - d77a4b2339538f8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (CoreGraphics.CGFloat) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of LoadingRefresh.MBPullToRefreshContainer.loadingView : some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onPreferenceChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.PreferenceKey, &#x3c4;_1_0.Value: Swift.Equatable&gt;(_: &#x3c4;_1_0.Type, perform: (&#x3c4;_1_0.Value) -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in LoadingRefresh.MBPullToRefreshContainer.wrappedViewOverlaid(geometry: SwiftUI.GeometryProxy) -&gt; some"
+                  moduleName = "LoadingRefresh"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/x229634/Documents/Examples/SwiftUI/LoadingRefresh/LoadingRefresh/MBPullToRefreshContainer/MBPullToRefreshContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "68">
                </Location>
             </Locations>
          </BreakpointContent>

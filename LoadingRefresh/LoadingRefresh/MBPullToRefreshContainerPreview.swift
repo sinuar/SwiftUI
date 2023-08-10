@@ -7,7 +7,7 @@ private typealias Interaction = MBPullToRefreshContainer<MBPullToRefreshContaine
 struct MBPullToRefreshContainerPreview: View {
     var body: some View {
         VStack {
-            Text("Regular")
+           Text("Regular")
             regularSection
         }
     }
@@ -61,7 +61,7 @@ private struct RefreshRegularSection: View {
     var accesibility: Accesibility
 
     var body: some View {
-        Text("MBPullToRefreshContainer Regular")
+       Text("MBPullToRefreshContainer Regular")
             let interaction = Interaction {
                 self.configuration.isLoading = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -83,7 +83,7 @@ private struct RefreshAlternativeSection: View {
     var accesibility: Accesibility
 
     var body: some View {
-        Text("MBPullToRefreshContainer Alternative")
+       Text("MBPullToRefreshContainer Alternative")
             let interaction = Interaction {
                 self.configuration.isLoading = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
