@@ -9,7 +9,6 @@ struct MBPullToRefreshContainerPreview: View {
         VStack {
             Text("Regular")
             regularSection
-            alternativeSection
         }
     }
 }
@@ -21,10 +20,35 @@ private struct MBPullToRefreshContainerDummyView: View {
             VStack {
                 Group {
                     Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.red)
                     Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.blue)
                     Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.gray)
                     Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.green)
                     Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.purple)
+                    Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.brown)
+                    Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.yellow)
+                    Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.white)
+                    Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.indigo)
+                    Text("Lorem Ipsum")
+                        .frame(height: 440)
+                        .background(Color.red)
                 }
             }
             Spacer()

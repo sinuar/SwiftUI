@@ -21,6 +21,8 @@ public struct MBPullToRefreshContainer<Content: View>: View {
     private let pullDownThreshold: CGFloat = 72.0
     @ObservedObject private var viewModel: ViewModel
     @State private var dragAmount = CGSize.zero
+    @State private var pullDownOnVoiceOver = true 
+    @State private var offsets = [CGFloat]()
 
     public init(viewModel: ViewModel, @ViewBuilder content: @escaping () -> Content) {
         self.viewModel = viewModel
@@ -29,16 +31,18 @@ public struct MBPullToRefreshContainer<Content: View>: View {
 
     public var body: some View {
         VStack {
-            if UIAccessibility.isVoiceOverRunning {
-                Text("Voice Over is Here!")
-            }
             GeometryReader { geometry in
-                wrappedViewOverlaid(geometry: geometry)
+                if UIAccessibility.isVoiceOverRunning {
+                    wrappedViewOverlaidForVoiceOver(geometry: geometry)
+                } else {
+                    wrappedViewOverlaid(geometry: geometry)
+                }
             }
         }
+        .accessibilityAddTraits(.isSelected)
         .accessibilityIdentifier(viewModel.accessibility.identifier)
-        .accessibilityLabel(viewModel.accessibility.label ?? "")
-        .accessibilityHint(viewModel.accessibility.hint ?? "")
+        .accessibilityLabel(viewModel.accessibility.label ?? "Debe leer esto")
+        .accessibilityHint(viewModel.accessibility.hint ?? "Debe leer esto22")
     }
 
     @ViewBuilder private var loadMoreContainer: some View {
@@ -65,6 +69,40 @@ public struct MBPullToRefreshContainer<Content: View>: View {
     @ViewBuilder private var loadingView: some View {
         if viewModel.configuration.isLoading {
             loadMoreContainer
+        }
+    }
+
+    @ViewBuilder private func contentConfigured(geometry: GeometryProxy) -> some View {
+        content()
+            .overlay(
+                loadMoreContainer.offset(y: dragAmount.height - 140),
+                alignment: .top)
+            .anchorPreference(key: OffsetPreferenceKey.self, value: .top) { geometry[$0].y }
+    }
+
+
+    @ViewBuilder private func wrappedViewOverlaidForVoiceOver(geometry: GeometryProxy) -> some View {
+        VStack {
+            loadingView
+            if pullDownOnVoiceOver {
+                ScrollView {
+                    contentConfigured(geometry: geometry)
+                        .accessibilityScrollAction { edge in
+                            setupAccessibilityScrollAction(on: edge)
+                        }
+                }
+                .onPreferenceChange(OffsetPreferenceKey.self) { offset in
+                    setupOffsetPreferenceChange(offset)
+                }
+            } else {
+                ScrollView {
+                    contentConfigured(geometry: geometry)
+                }
+                .onPreferenceChange(OffsetPreferenceKey.self) { offset in
+                    setupPreferenceChangeForVoiceOver(offset)
+                }
+            }
+
         }
     }
 
@@ -96,6 +134,29 @@ public struct MBPullToRefreshContainer<Content: View>: View {
         if offset > pullDownThreshold {
             viewModel.interaction.onPullDown()
             dragAmount.height = 2 * pullDownThreshold - offset
+        }
+    }
+
+    private func setupPreferenceChangeForVoiceOver(_ offset: CGFloat) {
+        offsets.append(offset)
+        let shouldAllowPullDownToRefresh = offset > 0 && offsets.count > 1
+        if shouldAllowPullDownToRefresh {
+            pullDownOnVoiceOver = true
+            offsets = []
+            return
+        }
+        if offset < -100 { offsets = [] }
+        setupOffsetPreferenceChange(offset)
+    }
+
+    private func setupAccessibilityScrollAction(on edge: Edge) {
+        switch edge {
+        case .top:
+            viewModel.interaction.onPullDown()
+        case .bottom:
+            pullDownOnVoiceOver = false
+        default:
+            break
         }
     }
 }
