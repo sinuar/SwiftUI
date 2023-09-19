@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "39B73954-F192-4E28-BCBA-B10326C1CF4B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EE26C15-A4BF-42D4-9AF8-4A79A4034B28"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleCoordinatesGR/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3EE26C15-A4BF-42D4-9AF8-4A79A4034B28 - b01a5bfb7ae8765"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.CGSize) -&gt; () in ExampleCoordinatesGR.ContentView.body.getter : some"
+                  moduleName = "ExampleCoordinatesGR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sinuar/Documents/Programming/SwiftUI/ExampleCoordinatesGR/ExampleCoordinatesGR/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "3EE26C15-A4BF-42D4-9AF8-4A79A4034B28 - b01a5bfb7ae8765"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.CGSize) -&gt; () in ExampleCoordinatesGR.ContentView.body.getter : some"
+                  moduleName = "ExampleCoordinatesGR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sinuar/Documents/Programming/SwiftUI/ExampleCoordinatesGR/ExampleCoordinatesGR/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0834B878-9BD3-436A-A204-0C58A69FDE8E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExampleCoordinatesGR/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0834B878-9BD3-436A-A204-0C58A69FDE8E - d043cdd9904bf2df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.CGSize) -&gt; () in ExampleCoordinatesGR.ContentView.body.getter : some"
+                  moduleName = "ExampleCoordinatesGR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sinuar/Documents/Programming/SwiftUI/ExampleCoordinatesGR/ExampleCoordinatesGR/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "0834B878-9BD3-436A-A204-0C58A69FDE8E - d043cdd9904bf2df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.CGSize) -&gt; () in ExampleCoordinatesGR.ContentView.body.getter : some"
+                  moduleName = "ExampleCoordinatesGR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sinuar/Documents/Programming/SwiftUI/ExampleCoordinatesGR/ExampleCoordinatesGR/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
