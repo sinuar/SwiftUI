@@ -141,7 +141,6 @@ struct ToolbarNavigation: View {
                 }
             }
         }
-        .navigationBarTitle("Keyboard Toolbar Example")
     }
 }
 
