@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         secondViewController.delegate = self // Asignación a self en init o aquí p. ej.
-        // La clase que no puede hacer algo. se le asigna la funcionalidad de lo que hará.
+        // A la clase que no puede hacer algo, se le asigna la funcionalidad de lo que hará.
         // Se implementa en la clase que hará la acción. O sea aquí.
         button.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
