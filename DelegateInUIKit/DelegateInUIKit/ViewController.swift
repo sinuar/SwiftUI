@@ -24,10 +24,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        secondViewController.delegate = self // Asignación a self en init o aquí p. ej.
+        // The counter will take place in ViewController, so the SecondViewController
+        // delegates the action to ViewController like this:
+        secondViewController.delegate = self 
+        // Asignación a self en init o aquí en viewDidLoad.
         // A la clase que no puede hacer algo, se le asigna la funcionalidad de lo que hará.
-        // Se implementa en la clase que hará la acción. O sea aquí.
+   
         button.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
         
