@@ -18,20 +18,20 @@ final class CounterViewModel: ObservableObject {
 struct ContentView: View {
     var body: some View {
         @ObservedObject var viewModel = CounterViewModel()
-
         
         VStack {
-            RandomNumberView(counterViewModel: viewModel)
+         RandomNumberView(counterViewModel: viewModel)
+         //    RandomNumberView()
         }
     }
 }
 
 struct CounterView: View {
     /// Using @StateObject.
-    // @StateObject var viewModel = CounterViewModel()
+   // @StateObject var viewModel = CounterViewModel()
     
     /// Using @ObservedObject instead.
-    @ObservedObject var viewModel = CounterViewModel()
+     @ObservedObject var viewModel = CounterViewModel()
     
     var body: some View {
         VStack {
@@ -45,7 +45,8 @@ struct CounterView: View {
 
 struct RandomNumberView: View {
     @State var randomNumber = 0
-    @ObservedObject var counterViewModel: CounterViewModel
+      @ObservedObject var counterViewModel: CounterViewModel
+   //  @StateObject var counterViewModel: CounterViewModel
     
     var body: some View {
         VStack {
@@ -53,12 +54,13 @@ struct RandomNumberView: View {
             Button("Randomize number") {
                 randomNumber = (0..<1000).randomElement()!
             }
-            Button("Plus Two") {
-                counterViewModel.count += 2
-            }
+//            Button("Plus Two") {
+//                 counterViewModel.count += 2
+//            }
             .tint(.cyan)
         }.padding(.bottom)
-        CounterView(viewModel: counterViewModel)
+     CounterView(viewModel: counterViewModel)
+       //  CounterView()
     }
 }
 
@@ -74,3 +76,6 @@ struct RandomNumberView: View {
 /// The fix is as simple as changing the CounterView view model property to be a @StateObject
 /// instead of an @ObservedObject. As described above, the state object makes sure
 /// the view model retains between view redraws and ensures our counter values remain the same.
+
+/// A @StateObject doesn't require to be called within the mother Struct.
+/// Can be just in the child Struct. And changes are keep.
