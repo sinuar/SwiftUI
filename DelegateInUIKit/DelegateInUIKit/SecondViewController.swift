@@ -11,7 +11,7 @@ class SecondViewController: UIViewController {
     weak var delegate: SecondViewControllerDelegate? // Instancia en clase que va a delegar
 
     let button: UIButton = {
-        let label = "Button"
+        let label = "Add count"
         let button = UIButton()
         button.setTitle(label, for: .normal)
         button.backgroundColor = .green

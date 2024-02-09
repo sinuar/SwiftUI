@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {    
     let button: UIButton = {
-        let label = "Button"
+        let label = "See next screen"
         let button = UIButton()
         button.setTitle(label, for: .normal)
         button.backgroundColor = .green
