@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class CounterViewModel: ObservableObject {
+class CounterViewModel: ObservableObject {
     @Published var count = 0
     
     func incrementCounter() {

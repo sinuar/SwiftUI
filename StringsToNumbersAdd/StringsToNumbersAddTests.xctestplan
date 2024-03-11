@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "335BFB6D-558F-4598-B9BC-1CDB25FDB928",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StringsToNumbersAdd.xcodeproj",
+        "identifier" : "0F000C092B87F3840089258B",
+        "name" : "StringsToNumbersAddTests"
+      }
+    }
+  ],
+  "version" : 1
+}
