@@ -1,0 +1,33 @@
+{
+  "schemaName": "StarWarsAPI",
+  "input": {
+    "operationSearchPaths": ["**/*.graphql"],
+    "schemaSearchPaths": ["**/*.graphqls"]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./Sources/Schema",
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputPath": "./schema.graphqls"
+      }
+    }
+  }
+}
